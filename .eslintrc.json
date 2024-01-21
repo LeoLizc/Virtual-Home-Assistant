@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": "off",
+    "import/prefer-default-export": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": [
+      "off"
+    ],
+    "class-methods-use-this": "off"
+  },
+  "ignorePatterns": [
+    "postcss.config.js",
+    "next.config.js"
+  ]
+}
