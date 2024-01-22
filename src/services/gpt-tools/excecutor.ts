@@ -30,7 +30,7 @@ async function execute(toolCall: RequiredAction): Promise<string> {
     const func = enabledTools[name];
     const args = JSON.parse(strArgs);
     if (func != null) {
-      console.log(`corriendo función "${func}" con parámetros ${strArgs}`);
+      console.log(`corriendo función "${name}" con parámetros ${strArgs}`);
       return await func.run(args);
     }
     throw new Error('No existe la función solicitada');
