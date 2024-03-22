@@ -94,7 +94,7 @@ export default function Home() {
           isIconOnly
           disabled={reloadDisabled}
           disableAnimation={reloadDisabled}
-        // onClick={loadNewThread}
+          onClick={loadNewThread}
         >
           <ReloadIcon />
         </Button>
